@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/fragment_home">
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:label="HomeFragment"
+        android:name="com.hqbd.weshare.fragment.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/jump_to_user"
+            app:destination="@+id/fragment_user_center"/>
+
+        <action
+            android:id="@+id/jump_to_res"
+            app:destination="@id/fragment_res"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_user_center"
+        android:name="com.hqbd.weshare.fragment.UserFragment"
+        android:label="UserFragment"
+        tools:layout="@layout/fragment_user_center">
+
+        <action
+            android:id="@+id/jump_to_home"
+            app:destination="@+id/fragment_user_center"/>
+
+        <action
+            android:id="@+id/jump_to_res"
+            app:destination="@id/fragment_res"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_res"
+        android:name="com.hqbd.weshare.fragment.ResourceFragment"
+        android:label="ResourceFragment"
+        tools:layout="@layout/fragment_resource">
+
+    </fragment>
+
+</navigation>

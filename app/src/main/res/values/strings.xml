@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">WeShare</string>
+    <string name="home">首页</string>
+    <string name="files">资源</string>
+    <string name="user_center">我的</string>
+    <string name="reply">答辩</string>
+    <string name="paper">论文</string>
+    <string name="top_res">热门</string>
+    <string name="search">搜索</string>
 </resources>
